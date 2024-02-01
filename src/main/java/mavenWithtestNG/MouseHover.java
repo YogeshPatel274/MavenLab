@@ -21,5 +21,6 @@ WebDriver driver;
 		Actions actions=new Actions(driver);
 		//actions.dragAndDrop(drag, drop).build().perform();
 		actions.clickAndHold(drag).moveToElement(drop).release(drag).build().perform();
+		driver.quit();
 	}
 }
